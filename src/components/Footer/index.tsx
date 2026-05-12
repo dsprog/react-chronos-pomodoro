@@ -1,7 +1,14 @@
+import styles from './styles.module.css';
+
 export function Footer() {
     return (
-        <>
-            <p>Rodapé</p>
-        </>
-    )
+        <footer className={styles.footer}>
+            <a href='/about-pomodoro/'>
+                Entenda como funciona a técnica pomodoro
+            </a>
+            <a href='/'>
+                Chronos Pomodoro &copy; {new Date().getFullYear()} - Feito com 💚
+            </a>
+        </footer>
+    );
 }
